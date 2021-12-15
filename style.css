@@ -1,0 +1,169 @@
+*{
+    cursor:none;
+}
+
+
+body.sightingspage{
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666;
+    overflow-x: hidden;
+
+}
+
+header{
+    background-color:rgb(34, 31, 31);
+    color: white;
+    padding: 20px;
+}
+
+.pimg1{
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.pimg1{
+    background-attachment: fixed;
+}
+
+.pimg2{
+    background-attachment: scroll;
+}
+
+
+
+.pimg1{
+    background-image: url("/Images/santa\ flying\ secret.png");
+    min-height: 550px;
+}
+
+.pimg2{
+    background-image: url("/Images/TKQO23SKXQI6FGJAIRKFY674BQ.png"), url("/Images/santa-Krumpus-collage.png"), url("/Images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.png"), url("/Images/wood.png");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: left, right, center, center;
+    position: relative;
+    background-size: 500px, 500px, 500px, 100%;
+}
+
+.pimg3{
+    background-image: url("/Images/6f196db4bc886c41551d987d2b39e37e.png"), url("/Images/scary-santa-02.png"), url("/Images/scary-santa-13.png"), url("/Images/wood.png");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: right, left, center, center;
+    
+
+  
+}
+
+
+
+.section1, .section2, .section3{
+    text-align: center;
+    padding: 50px 80px;
+    background-color: darkred;
+    color: white;
+
+}
+
+
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase ;
+
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.ptext .border.trans{
+background-color: transparent;
+mix-blend-mode: difference;
+}
+
+
+
+footer{
+    background-color: rgb(34, 31, 31);
+    color: white;
+    text-align: center;
+}
+
+
+
+.cursor{
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+}
+
+.cursor::after, .cursor::before{
+    content:"" ;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50px;
+
+}
+
+.cursor::before{
+    background-color: white;
+    transform: translate(-50%, -50%) scale(3);
+}
+
+.cursor.click::before{
+    animation: click 1s ease-in-out forwards;
+}
+
+@keyframes click{
+    0%{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(5);
+    }
+}
+
+
+
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
+
