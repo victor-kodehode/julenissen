@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(12, 46, 43);
+    color: white;
+    font-family: lato, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+main {
+    color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: url("images/woodtexture.png");
+}
+h1,h2 {
+    text-align:center;
+}
+.container {
+    display: flex;
+}
+.container div {
+    flex-grow: 1;
+}
+
+input{
+    background-color: green; }
+
+input:focus{
+    background-color: #fff;
+    color: #000; }
+
+textarea{
+    background-color: green;
+    border: 2px solid #000; }
+
+textarea:focus{
+    background-color: #fff;
+    color: #000; }
+
+/* label should be in similar style to other marked areas, override with main css styling */
+label{
+    background-color: gray;
+    border-bottom: 1px solid #000;
+    color: #000;
+    padding: 2px; }
+
+/* p can be deleted, use main css styling */
+p{
+    border-bottom: 1px solid #000; }
+
+select{
+    background-color: green;
+    border: 2px solid #000; }
+
+select:focus{
+    background-color: #fff;
+    color: #000; }
+
+/* legend should be in similar style to other marked areas, override with main css styling */
+legend{
+    background-color: gray;
+    border: 2px solid #000;
+    color: #000;
+    padding: 2px 4px; }
+
+fieldset{
+    background-image: url("../images/woodtexture.png");
+    border: 2px solid #000; }
