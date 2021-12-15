@@ -3,6 +3,9 @@
 }
 
 
+/* text box tree texture.
+  background images rgb, 12, 46 ,43.   */
+
 body.sightingspage{
     height: 100%;
     margin: 0;
@@ -14,6 +17,33 @@ body.sightingspage{
     overflow-x: hidden;
 
 }
+
+
+.container {
+    display: flex;
+}
+.container div {
+    flex-grow: 1;
+    padding: 0 5px;
+}
+a {
+    color: white;
+    font-weight: bold;
+}
+img {
+    border: 2px black solid;
+}
+.nav-box {
+    text-align: right;
+}
+.nav-box span {
+    border: 2px solid black;
+    background: linear-gradient(white,brown);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
 
 header{
     background-color:rgb(34, 31, 31);
@@ -41,26 +71,27 @@ header{
 
 
 .pimg1{
-    background-image: url("images/santa-flying-secret.png");
+    background-image: url("/Images/santa\ flying\ secret.png");
     min-height: 550px;
 }
 
 .pimg2{
-    background-image: url("images/TKQO23SKXQI6FGJAIRKFY674BQ.jpg"), url("images/santa-Krumpus-collage.jpg"), url("images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.jpg"), url("images/wood.jpg");
+    background-color: rgb(12, 46, 43);
+    background-image: url("/Images/TKQO23SKXQI6FGJAIRKFY674BQ.png"), url("/Images/santa-Krumpus-collage.png"), url("/Images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.png");
     min-height: 400px;
     background-repeat: no-repeat;
     background-position: left, right, center, center;
     position: relative;
-    background-size: 500px, 500px, 500px, 100%;
+    background-size: 500px, 500px, 500px;
 }
 
 .pimg3{
-    background-image: url("/Images/6f196db4bc886c41551d987d2b39e37e.png"), url("/Images/scary-santa-02.png"), url("/Images/scary-santa-13.png"), url("/Images/wood.png");
+    background-color: rgb(12, 46, 43);
+    background-image: url("/Images/6f196db4bc886c41551d987d2b39e37e.png"), url("/Images/scary-santa-02.png"), url("/Images/scary-santa-13.png");
     min-height: 400px;
     background-repeat: no-repeat;
     background-position: right, left, center, center;
-    
-
+   
   
 }
 
@@ -69,7 +100,7 @@ header{
 .section1, .section2, .section3{
     text-align: center;
     padding: 50px 80px;
-    background-color: darkred;
+    background-image: url(/Images/wood.png);
     color: white;
 
 }
@@ -111,6 +142,50 @@ footer{
 }
 
 
+header{
+    background-image: url("/Images/wood.png");
+    border: 1px solid black;
+}
+
+/* #mainbox{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+}
+
+.sidemenu a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+}
+
+.sidemenu a:hover{
+    color: white;
+}
+
+.sidemenu .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+
+} */
 
 .cursor{
     position: absolute;
