@@ -46,11 +46,21 @@ header div {
     text-align: center;
     margin: auto;
 }
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.links div {
+    padding: 7px 0;
+}
 .links a {
     border: 2px solid black;
     background: linear-gradient(white,brown);
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
     padding: 5px;
+    font-size: 25px;
 }
 .title-box {
     font-size: 50px;
