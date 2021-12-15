@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(12, 46, 43);
+    font-family: lato, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+main,header {
+    color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: url("../images/woodtexture.png");
+    border: 2px black solid;
+}
+h1,h2 {
+    text-align:center;
+}
+.container {
+    display: flex;
+}
+.container div {
+    flex-grow: 1;
+    padding: 0 5px;
+}
+a {
+    color: white;
+    font-weight: bold;
+}
+img {
+    border: 2px black solid;
+}
+.nav-box {
+    text-align: right;
+}
+.nav-box span {
+    border: 2px solid black;
+    background: linear-gradient(white,brown);
+    padding: 5px;
+    border-radius: 5px;
+}
