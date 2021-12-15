@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(12, 46, 43);
+    font-family: lato, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+main {
+    color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: url("images/woodtexture.png");
+}
+h1,h2 {
+    text-align:center;
+}
+.container {
+    display: flex;
+}
+.container div {
+    flex-grow: 1;
+}
