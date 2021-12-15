@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us about Santa sightings</title>
+    <link rel="stylesheet" href="css/njContactStyle.css">
+    <link rel="icon" type="image/x-icon" href="images/cursor.png">
+</head>
+
+<body>
+    <h2 style="background-image: url(images/woodtexture.png);">I AM A PLACEHOLDER FOR THE NAVIGATION BAR</h2>
+    <!-- Basic headline for this section of the site -->
+    <h2>Contact us with known Santa sightings!</h2>
+
+    <form>
+
+        <!-- Form that asks for user's contact details -->
+        <fieldset>
+            <legend>Your contact details</legend>
+            <label for="name">* First name or alias:</label>
+            <input type="text" name="name" id="name" placeholder="First or nick name" required><br><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last name (optional)"><br><br>
+            <label for="email" name="mail" id="mail">* Email:</label>
+            <input type="email" name="mail" id="mail" required placeholder="Where can we reach you?">
+        </fieldset><br>
+
+        <!-- Form that asks user for text input on alleged "Santa Sighting" -->
+        <fieldset>
+            <legend>Details of the Santa sighting</legend>
+            <p style="background-color: gray; padding: 2px; width: fit-content;">Provide as detailed a description as you can (and feel is safe.)</p>
+            <textarea name="addinfo" rows="15" cols="90" style="resize: none;" placeholder="Write here..." required></textarea><br>
+        
+            <!-- Radio buttons with Santa comparisons -->
+            <p style="background-color: gray; padding: 2px; width: fit-content;">Which Santa most closely resembles the one you saw?</p>
+            <input type="radio" name="santaType" id="santaType1" checked="checked">
+            <img src="images/clasSant.png" alt="Normal Santa">
+            <input type="radio" name="santaType" id="santaType2">
+            <img src="images/alieSant.png" alt="Alien Santa">
+            <input type="radio" name="santaType" id="santaType3">
+            <img src="images/roboSant.png" alt="Robot Santa">
+            <input type="radio" name="santaType" id="santaType4">
+            <img src="images/cthuSant.png" alt="C'thulhu Santa">
+            <input type="radio" name="santaType" id="santaType5">
+            <img src="images/monsSant.png" alt="monstrous Santa">
+            <input type="radio" name="santaType" id="santaType6">
+            <img src="images/ghoSant.png" alt="ghost Santa"><br>
+        
+            <!-- Radio buttons that asks user about severity of sighting -->
+            <p style="background-color: gray; padding: 2px; width: fit-content;">What level of risk did this encounter pose on a scale from 1 to 3?</p>
+            <input type="radio" name="risk" id="risk1">
+            <label for="risk1">1</label>
+            <input type="radio" name="risk" id="risk2">
+            <label for="risk2">2</label>
+            <input type="radio" name="risk" id="risk3" checked="checked">
+            <label for="risk3">3</label><br>
+
+            <!-- Selection field to determine where Santa went next -->
+            <p style="background-color: gray; padding: 2px; width: fit-content;">In which direction did the Santa seem to head next?</p>
+            <select id="direct" name="direct">
+                <option value="blank" selected disabled></option>
+                <option value="dNorth">North</option>
+                <option value="dNE">North-east</option>
+                <option value="dEast">East</option>
+                <option value="dSE">South-east</option>
+                <option value="dSouth">South</option>
+                <option value="dSW">South-west</option>
+                <option value="dWest">West</option>
+                <option value="dNW">North-west</option>
+                <option value="blank" disabled></option>
+                <option value="poof">Teleported/vanished</option>
+            </select>
+
+        </fieldset><br>
+        </fieldset>
+
+        <!-- Redirect user to "thank you" page after submitting sighting -->
+        <fieldset>
+            <legend>Submit Santa sighting</legend>
+            <p style="background-color: gray; padding: 2px; width: fit-content;">Click here to submit your Santa sighting. Your intel is very helpful to our efforts in tracking and potentially bringing the Santa in for research and questioning.</p>
+            <p style="background-color: gray; padding: 2px; width: fit-content;">Viable information leading to the successful capture of the Santa will receive a reward as well as recognition in scientific media publications.</p>
+            <a href="njThanks.html" style="background-color: green; color: black; border: 2px gray outset; padding: 3px; width: fit-content; text-decoration: none;">Submit</a>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
