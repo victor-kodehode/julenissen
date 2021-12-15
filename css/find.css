@@ -1,16 +1,17 @@
-body {
+body,html {
     background-color: rgb(12, 46, 43);
     font-family: lato, sans-serif;
     font-size: 18px;
     font-weight: bold;
+    margin: 0;
 }
-main,header {
+main {
     color: white;
     max-width: 1000px;
     margin: 20px auto;
-    padding: 20px;
     background: url("../images/woodtexture.png");
     border: 2px black solid;
+    padding: 20px;
 }
 h1,h2 {
     text-align:center;
@@ -26,15 +27,32 @@ a {
     color: white;
     font-weight: bold;
 }
-img {
+main img {
     border: 2px black solid;
 }
-.nav-box {
-    text-align: right;
+
+/* header css */
+header {
+    display: flex;
+    color: white;
+    margin: 0;
+    background: url("../images/woodtexture.png");
+    border-bottom: 2px black solid;
 }
-.nav-box span {
+header div {
+    flex-grow: 1;
+}
+.logo-box, .title-box, .nav-box {
+    text-align: center;
+    margin: auto;
+}
+.links a {
     border: 2px solid black;
     background: linear-gradient(white,brown);
-    padding: 5px;
     border-radius: 5px;
+    padding: 5px;
 }
+.title-box {
+    font-size: 50px;
+}
+/* header css */
