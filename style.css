@@ -41,12 +41,12 @@ header{
 
 
 .pimg1{
-    background-image: url("/Images/santa\ flying\ secret.png");
+    background-image: url("images/santa-flying-secret.png");
     min-height: 550px;
 }
 
 .pimg2{
-    background-image: url("/Images/TKQO23SKXQI6FGJAIRKFY674BQ.png"), url("/Images/santa-Krumpus-collage.png"), url("/Images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.png"), url("/Images/wood.png");
+    background-image: url("images/TKQO23SKXQI6FGJAIRKFY674BQ.jpg"), url("images/santa-Krumpus-collage.jpg"), url("images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.jpg"), url("images/wood.jpg");
     min-height: 400px;
     background-repeat: no-repeat;
     background-position: left, right, center, center;
