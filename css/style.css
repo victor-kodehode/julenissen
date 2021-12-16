@@ -12,12 +12,15 @@
 /* text box tree texture.
   background color rgb, 12, 46 ,43.   */
 
+
+  
+
 body.sightingspage{
     height: 100%;
     margin: 0;
     font-size: 18px;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.8em;
     color:#666;
     overflow-x: hidden;
@@ -39,17 +42,25 @@ header div {
     text-align: center;
     margin: auto;
 }
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.links div {
+    padding: 7px 0;
+}
 .links a {
     border: 2px solid black;
     background: linear-gradient(white,brown);
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
     padding: 5px;
-    color: white;
+    font-size: 25px;
 }
 .title-box {
     font-size: 50px;
 }
-
 /* header css */
 
 
@@ -81,7 +92,8 @@ header div {
 
 .pimg1{
     background-image: url("../images/santa\ flying\ secret.png");
-    min-height: 550px;
+    min-height: 500px;
+    border: 4px solid black;
 }
 
 .pimg2{
@@ -92,6 +104,7 @@ header div {
     background-position: left, right, center, center;
     position: relative;
     background-size: 500px, 500px, 500px;
+    border: 4px solid black;
 }
 
 .pimg3{
@@ -100,9 +113,13 @@ header div {
     min-height: 400px;
     background-repeat: no-repeat;
     background-position: right, left, center, center;
+    border: 4px solid black;
    
   
 }
+
+
+
 
 /* All images about santa and their location on the page */
 
