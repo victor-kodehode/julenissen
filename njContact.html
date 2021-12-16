@@ -46,11 +46,11 @@
         <!-- Form that asks user for text input on alleged "Santa Sighting" -->
         <fieldset>
             <legend>Details of the Santa sighting</legend>
-            <p style="background-color: gray; padding: 2px; width: fit-content;">Provide as detailed a description as you can (and feel is safe.)</p>
+            <p style="background-color: gray; padding: 2px; width: fit-content; border-bottom: 1px solid black;">Provide as detailed a description as you can (and feel is safe.)</p>
             <textarea name="addinfo" rows="15" cols="90" style="resize: none;" placeholder="Write here..." required></textarea><br>
         
             <!-- Radio buttons with Santa comparisons -->
-            <p style="background-color: gray; padding: 2px; width: fit-content;">Which Santa most closely resembles the one you saw?</p>
+            <p style="background-color: gray; padding: 2px; width: fit-content; border-bottom: 1px solid black;">Which Santa most closely resembles the one you saw?</p>
             <input type="radio" name="santaType" id="santaType1" checked="checked">
             <img src="images/clasSant.png" alt="Normal Santa">
             <input type="radio" name="santaType" id="santaType2">
@@ -65,7 +65,7 @@
             <img src="images/ghoSant.png" alt="ghost Santa"><br>
         
             <!-- Radio buttons that asks user about severity of sighting -->
-            <p style="background-color: gray; padding: 2px; width: fit-content;">What level of risk did this encounter pose on a scale from 1 to 3?</p>
+            <p style="background-color: gray; padding: 2px; width: fit-content; border-bottom: 1px solid black;">What level of risk did this encounter pose on a scale from 1 to 3?</p>
             <input type="radio" name="risk" id="risk1">
             <label for="risk1">1</label>
             <input type="radio" name="risk" id="risk2">
@@ -74,7 +74,7 @@
             <label for="risk3">3</label><br>
 
             <!-- Selection field to determine where Santa went next -->
-            <p style="background-color: gray; padding: 2px; width: fit-content;">In which direction did the Santa seem to head next?</p>
+            <p style="background-color: gray; padding: 2px; width: fit-content; border-bottom: 1px solid black;">In which direction did the Santa seem to head next?</p>
             <select id="direct" name="direct">
                 <option value="blank" selected disabled></option>
                 <option value="dNorth">North</option>
@@ -95,8 +95,8 @@
         <!-- Redirect user to "thank you" page after submitting sighting -->
         <fieldset>
             <legend>Submit Santa sighting</legend>
-            <p style="background-color: gray; padding: 2px; width: fit-content;">Click here to submit your Santa sighting. Your intel is very helpful to our efforts in tracking and potentially bringing the Santa in for research and questioning.</p>
-            <p style="background-color: gray; padding: 2px; width: fit-content;">Viable information leading to the successful capture of the Santa will receive a reward as well as recognition in scientific media publications.</p>
+            <p style="background-color: gray; padding: 2px; width: fit-content; border-bottom: 1px solid black;">Click here to submit your Santa sighting. Your intel is very helpful to our efforts in tracking and potentially bringing the Santa in for research and questioning.</p>
+            <p style="background-color: gray; padding: 2px; width: fit-content; border-bottom: 1px solid black;">Viable information leading to the successful capture of the Santa will receive a reward as well as recognition in scientific media publications.</p>
             <a href="njThanks.html" style="background-color: green; color: black; border: 2px gray outset; padding: 3px; width: fit-content; text-decoration: none;">Submit</a>
         </fieldset>
 
