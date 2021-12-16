@@ -250,7 +250,6 @@ textarea:focus{
     color: #000;
 }
 
-/* label should be in similar style to other marked areas, override with main css styling */
 label{
     background-color: gray;
     border-bottom: 1px solid #000;
@@ -268,7 +267,6 @@ select:focus{
     color: #000;
 }
 
-/* legend should be in similar style to other marked areas, override with main css styling */
 legend{
     background-color: gray;
     border: 2px solid #000;
