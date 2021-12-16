@@ -79,7 +79,6 @@ header div {
     font-size: 18px;
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    line-height: 1.8em;
     color:#666;
     overflow-x: hidden;
 }
@@ -98,7 +97,7 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 500px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .pimg2{
@@ -107,13 +106,13 @@ a {
     background-size: 500px, 500px, 500px;
     background-attachment: scroll;
     position: relative;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .pimg3{
     background-image: url("../images/6f196db4bc886c41551d987d2b39e37e.jpg"), url("../images/scary-santa-02.jpg"), url("../images/scary-santa-13.jpg");
     background-position: right, left, center, center;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .pimg2, .pimg3 {
