@@ -1,33 +1,44 @@
 *{
     cursor:none;
 }
-
-/* p{
-    background-color: rgb(0, 0, 0, 75%);
-    border-radius: 3px;
-    
-} */
-
-
-/* text box tree texture.
-  background color rgb, 12, 46 ,43.   */
-
-
-  
-
-body.sightingspage{
-    height: 100%;
-    margin: 0;
+body {
+    background-color: rgb(12,46,43);
+    color: white;
+    font-family: lato, sans-serif;
     font-size: 18px;
-    font-family: "Lato", sans-serif;
     font-weight: bold;
-    line-height: 1.8em;
-    color:#666;
-    overflow-x: hidden;
-
+    margin: 0;
+}
+main {
+    background: url("../images/woodtexture.png");
+    color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px black solid;
+}
+h1,h2 {
+    text-align:center;
+}
+.container {
+    display: flex;
+}
+.container div {
+    flex-grow: 1;
+    padding: 0 5px;
+}
+a {
+    color: white;
+    font-weight: bold;
+}
+main img {
+    border: 2px black solid;
 }
 
-/* header css */
+/* text box tree texture.
+background images rgb, 12, 46 ,43.
+*/
+
 header {
     display: flex;
     color: white;
@@ -61,204 +72,91 @@ header div {
 .title-box {
     font-size: 50px;
 }
-/* header css */
 
+.sightingspage{
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    line-height: 1.8em;
+    color:#666;
+    overflow-x: hidden;
+}
 
-
-
-
-
-
-/* All images about santa and their location on the page */
+a {
+    color: white;
+    font-weight: bold;
+}
 
 .pimg1{
+    background-image: url("../images/santa\ flying\ secret.png");
     position: relative;
     opacity: 1;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
-}
-
-.pimg1{
     background-attachment: fixed;
-}
-
-.pimg2{
-    background-attachment: scroll;
-}
-
-
-
-.pimg1{
-    background-image: url("../images/santa\ flying\ secret.png");
     min-height: 500px;
     border: 4px solid black;
 }
 
 .pimg2{
-    background-color: rgb(12, 46, 43);
     background-image: url("../images/TKQO23SKXQI6FGJAIRKFY674BQ.jpg"), url("../images/santa-Krumpus-collage.jpg"), url("../images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.jpg");
-    min-height: 400px;
-    background-repeat: no-repeat;
     background-position: left, right, center, center;
-    position: relative;
     background-size: 500px, 500px, 500px;
+    background-attachment: scroll;
+    position: relative;
     border: 4px solid black;
 }
 
 .pimg3{
-    background-color: rgb(12, 46, 43);
     background-image: url("../images/6f196db4bc886c41551d987d2b39e37e.jpg"), url("../images/scary-santa-02.jpg"), url("../images/scary-santa-13.jpg");
-    min-height: 400px;
-    background-repeat: no-repeat;
     background-position: right, left, center, center;
     border: 4px solid black;
-   
-  
 }
 
+.pimg2, .pimg3 {
+    background-color: rgb(12,46,43);
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
 
-
-
-/* All images about santa and their location on the page */
-
-
-
-
-
-
-/* Text css and how the boxes appear */
-
-.section1, .section2, .section3{
+section{
     text-align: center;
     padding: 50px 80px;
     background-image: url("../images/woodtexture.png");
     color: white;
-
 }
 
-
-
 .ptext{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
+    text-transform: uppercase;
     letter-spacing: 8px;
-    text-transform: uppercase ;
-
+    text-align: center;
+    position: absolute;
+    font-size: 27px;
+    color: #000;
+    width: 100%;
+    top: 50%;
 }
 
 .ptext .border{
     background-color: #111;
-    color: #fff;
-    padding: 20px;
     border-radius: 10px;
+    padding: 20px;
+    color: #fff;
 }
-
-
 
 .ptext .border.trans{
-background-color: transparent;
-mix-blend-mode: difference;
-}
-
-.ptext .border.trans.black{
     background-color: transparent;
     mix-blend-mode: difference;
-    }
-    
-
-/* Text css and how the boxes appear */
-
-
-
-
-/* everything cursor related */
-
-
-.cursor{
-    position: absolute;
-    left: 0;
-    top: 0;
-    
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-
 }
 
-.cursor::after, .cursor::before{
-    content:"" ;
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 50px;
-
-}
-
-.cursor::before{
-    background-color: white;
-    transform: translate(-50%, -50%) scale(3);
-}
-
-.cursor.click::before{
-    animation: click 1s ease-in-out forwards;
-}
-
-@keyframes click{
-    0%{
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
-    100%{
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(5);
-    }
-}
-
-/* everything cursor related */
-
-
-
-/* For mobile functionality */
-
-@media(max-width:568px){
-    .pimg1, .pimg2, .pimg3{
-        background-attachment: scroll;
-    }
-}
-
-/* For mobile functionality */
-
-
-
-
-
-
-
-
-
-/* Left over code from different experiments/tests */
-
-
-/* footer{
+footer{
     background-color: rgb(34, 31, 31);
-    color: white;
     text-align: center;
+    color: white;
 }
- */
-
-
 
 /* #mainbox{
     font-size: 24px;
@@ -297,7 +195,118 @@ mix-blend-mode: difference;
     right: 25px;
     font-size: 36px;
     margin-left: 32px;
-
 } */
 
-/* Left over code from different experiments/tests */
+.cursor{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.cursor::after, .cursor::before{
+    content:"" ;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50px;
+}
+
+.cursor::before{
+    background-color: white;
+    transform: translate(-50%, -50%) scale(3);
+}
+
+.cursor.click::before{
+    animation: click 1s ease-in-out forwards;
+}
+
+/* contact css */
+
+input{
+    background-color: green;
+}
+
+input:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+textarea{
+    background-color: green;
+    border: 2px solid #000;
+}
+
+textarea:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+/* label should be in similar style to other marked areas, override with main css styling */
+label{
+    background-color: gray;
+    border-bottom: 1px solid #000;
+    color: #000;
+    padding: 2px;
+}
+
+select{
+    background-color: green;
+    border: 2px solid #000;
+}
+
+select:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+/* legend should be in similar style to other marked areas, override with main css styling */
+legend{
+    background-color: gray;
+    border: 2px solid #000;
+    color: #000;
+    padding: 2px 4px;
+}
+
+fieldset{
+    background-image: url("../images/woodtexture.png");
+    border: 2px solid #000;
+}
+
+@keyframes click{
+    0%{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(5);
+    }
+}
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
+
+.thanks h2 {
+    background-image: url(../images/woodtexture.png);
+    width: fit-content;
+    padding: 2px 3px;
+    margin: auto;
+}
+.thanks p {
+    background-image: url(../images/woodtexture.png);
+    width: fit-content;
+    padding: 2px 3px;
+    margin: auto;
+}
