@@ -102,7 +102,7 @@ a {
 }
 
 .pimg2{
-    background-image: url("../images/TKQO23SKXQI6FGJAIRKFY674BQ.png"), url("../images/santa-Krumpus-collage.png"), url("../images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.png");
+    background-image: url("../images/TKQO23SKXQI6FGJAIRKFY674BQ.jpg"), url("../images/santa-Krumpus-collage.jpg"), url("../images/christmas-cthulhu-presents-santa-claus-wallpaper-preview.jpg");
     background-position: left, right, center, center;
     background-size: 500px, 500px, 500px;
     background-attachment: scroll;
@@ -111,7 +111,7 @@ a {
 }
 
 .pimg3{
-    background-image: url("../images/6f196db4bc886c41551d987d2b39e37e.png"), url("../images/scary-santa-02.png"), url("../images/scary-santa-13.png");
+    background-image: url("../images/6f196db4bc886c41551d987d2b39e37e.jpg"), url("../images/scary-santa-02.jpg"), url("../images/scary-santa-13.jpg");
     background-position: right, left, center, center;
     border: 4px solid black;
 }
